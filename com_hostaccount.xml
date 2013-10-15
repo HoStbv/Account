@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="component" method="upgrade">
+	<name>HostAccount</name>
+	<creationDate>15-10-2013</creationDate>
+	<author>M. Hiddink/ H. van Tol</author>
+	<authorEmail>hiddink@host.nl</authorEmail>
+		<copyright>Copyright (c)2013 M. Hiddink / Mardinkwebdesign.com</copyright>
+	<license>GNU GPL v3 or later</license>
+	<version>1.0.0</version>
+	<description>A joomla! component to keep an administration for you accountsy</description>
+
+	<!-- Public front end files -->
+	<files folder="frontend">
+		<filename>hostaccount.php</filename>
+        <folder>views</folder>
+	</files>
+
+	<!-- Front end translation files -->
+	<languages folder="language/frontend">
+		<language tag="en-GB">en-GB/en-GB.com_hostaccount.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.ini</language>
+	</languages>
+
+	<!-- SQL query files to execute on installation -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysql">sql/install/mysql/install.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysqli">sql/install/mysql/install.sql</file>
+		</sql>
+	</install>
+
+	<!-- SQL query files to execute on uninstallation -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysql">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysqli">sql/install/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- SQL files to run on update -->
+	<!--
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	-->
+	
+	<!-- Media files -->
+	<media destination="com_hostaccount" folder="media">
+		<folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+	</media>
+
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu view="cpanels"
+			img="../media/com_hostaccount/images/mdfinance-16.png">COM_HOSTACCOUNT</menu>
+
+		<!-- Back-end files -->
+		<files folder="backend">
+			<folder>sql</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>dispatcher.php</filename>
+			<filename>hostaccount.php</filename>
+			<filename>fof.xml</filename>
+		</files>
+
+		<!-- Back-end translation files -->
+		<languages folder="language/backend">
+			<language tag="en-GB">en-GB/en-GB.com_hostaccount.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_hostaccount.sys.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.sys.ini</language>
+		</languages>
+
+	</administration>
+
+	<!-- Installation / uninstallation script file -->
+	<!--<scriptfile>script.contactus.php</scriptfile>-->
+
+	<!-- Update servers -->
+	<!--
+	<updateservers>
+		<server type="extension" priority="1" name="Contact Us"><![CDATA[http://www.example.com/contactus.xml]]></server>
+	</updateservers>
+	-->
+</extension>
