@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="component" method="upgrade">
-	<name>HostAccount</name>
-	<creationDate>15-10-2013</creationDate>
+	<name>Host CRM</name>
+	<creationDate>09-11-2013</creationDate>
 	<author>M. Hiddink/ H. van Tol</author>
 	<authorEmail>hiddink@host.nl</authorEmail>
 		<copyright>Copyright (c)2013 M. Hiddink / Mardinkwebdesign.com</copyright>
 	<license>GNU GPL v3 or later</license>
 	<version>1.0.0</version>
-	<description>A joomla! component to keep an administration for you accountsy</description>
+	<description>A joomla! component to keep an administration for your accounts</description>
 
 	<!-- Public front end files -->
 	<files folder="frontend">
-		<filename>hostaccount.php</filename>
+		<filename>hostcrm.php</filename>
         <folder>views</folder>
 	</files>
 
 	<!-- Front end translation files -->
 	<languages folder="language/frontend">
-		<language tag="en-GB">en-GB/en-GB.com_hostaccount.ini</language>
-        <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_hostcrm.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.com_hostcrm.ini</language>
 	</languages>
 
 	<!-- SQL query files to execute on installation -->
@@ -51,7 +51,7 @@
 	-->
 	
 	<!-- Media files -->
-	<media destination="com_hostaccount" folder="media">
+	<media destination="com_hostcrm" folder="media">
 		<folder>images</folder>
         <folder>css</folder>
         <folder>js</folder>
@@ -61,7 +61,7 @@
 	<administration>
 		<!-- Administration menu -->
 		<menu view="cpanels"
-			img="../media/com_hostaccount/images/mdfinance-16.png">COM_HOSTACCOUNT</menu>
+			img="../media/com_hostcrm/images/mdfinance-16.png">COM_HOSTCRM</menu>
 
 		<!-- Back-end files -->
 		<files folder="backend">
@@ -73,16 +73,16 @@
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
 			<filename>dispatcher.php</filename>
-			<filename>hostaccount.php</filename>
+			<filename>hostcrm.php</filename>
 			<filename>fof.xml</filename>
 		</files>
 
 		<!-- Back-end translation files -->
 		<languages folder="language/backend">
-			<language tag="en-GB">en-GB/en-GB.com_hostaccount.ini</language>
-			<language tag="en-GB">en-GB/en-GB.com_hostaccount.sys.ini</language>
-            <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.ini</language>
-            <language tag="nl-NL">nl-NL/nl-NL.com_hostaccount.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_hostcrm.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_hostcrm.sys.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_hostcrm.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_hostcrm.sys.ini</language>
 		</languages>
 
 	</administration>

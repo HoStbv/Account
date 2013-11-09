@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+        @package        Hostaccount
+        @copyright        Copyright (c)2013 M. Hiddink / mardinkwebdesign.com
+        @license        GNU General Public License version 2 or later
+
+        Contact view form file
+-->
+<form validate="true">
+    <fieldset name="basic_information"
+              label="COM_HOSTACCOUNT_CONTACTS_GROUP_BASIC"
+            >
+        <field name="firstname" type="text"
+               label="COM_HOSTACCOUNT_CONTACTS_FIELD_FIRSTNAME"
+               class="input-xlarge"
+               required="true"
+                />
+        <field name="lastname" type="text"
+               label="COM_HOSTACCOUNT_CONTACTS_FIELD_LASTNAME"
+               class="input-xlarge"
+               required="true"
+                />
+        <field name="email" type="text"
+               label="COM_HOSTACCOUNT_CONTACTS_FIELD_EMAIL"
+               class="input-xlarge"
+               required="true"
+                />
+        <field name="comment" type="textarea"
+               label="COM_HOSTACCOUNT_CONTACTS_FIELD_COMMENT"
+               rows="10"
+               />
+
+
+    </fieldset>
+
+
+</form>

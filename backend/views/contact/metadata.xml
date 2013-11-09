@@ -5,7 +5,7 @@
 		<!-- Layout options -->
 		<options>
 			<!-- Default layout's name -->
-			<default name="Updates" />
+			<default name="COM_HOSTACCOUNT_VIEW_CONTACT" />
 		</options>
 	</view>
 </metadata>

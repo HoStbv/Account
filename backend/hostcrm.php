@@ -9,4 +9,4 @@ defined('_JEXEC') or die();
 
 require_once JPATH_LIBRARIES.'/fof/include.php';
 
-FOFDispatcher::getTmpInstance('com_hostaccount')->dispatch();
+FOFDispatcher::getTmpInstance('com_hostcrm')->dispatch();

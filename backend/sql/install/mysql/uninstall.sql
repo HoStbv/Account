@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS `#__hostaccount_accounts`;
+DROP TABLE IF EXISTS `#__hostcrm_accounts`;

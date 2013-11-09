@@ -5,7 +5,7 @@
 		<!-- Layout options -->
 		<options>
 			<!-- Default layout's name -->
-			<default name="ACCOUNTS" />
+			<default name="COM_HOSTCRM_VIEW_ACCOUNTS" />
 		</options>
 	</view>
 </metadata>

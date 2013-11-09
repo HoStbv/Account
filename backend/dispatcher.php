@@ -7,7 +7,7 @@
 
 defined('_JEXEC') or die();
 
-class HostaccountDispatcher extends FOFDispatcher
+class HostcrmDispatcher extends FOFDispatcher
 {
     public $defaultView = 'cpanels';
 }
